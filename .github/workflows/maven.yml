@@ -35,9 +35,9 @@ jobs:
     - name: Build with Maven and SonarCloud
       run: >
         xvfb-run mvn verify -Pjacoco $SONARGOAL
-        -Dsonar.organization=lorenzobettini-github
+        -Dsonar.organization=arifaimanz
         -Dsonar.host.url=https://sonarcloud.io
-        -Dsonar.projectKey=LorenzoBettini_sonarqube-example
+        -Dsonar.projectKey=arifaimanz_sonarqube-example3
       working-directory: com.examples.school
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
